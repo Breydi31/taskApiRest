@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hvFkCcCr/ijsMz2hfLg67sec7kfz+HlcnOJESP33rGc=",
+  "Source": "taskApiRest",
+  "BasePath": "_content/taskApiRest",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
