@@ -1,0 +1,7 @@
+# Archivos y carpetas de compilación
+bin/
+obj/
+
+# Base de datos SQLite
+*.db
+*.db-journal
