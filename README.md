@@ -17,79 +17,106 @@ API RESTful construida con .NET 8 y SQLite para gestionar la lista de tareas.
 
 ### 1. Clonar el repositorio
 
+```bash
 git clone https://github.com/Breydi31/taskApiRest.git
 cd taskApiRest
+```
 
 ### 2. Restaurar paquetes
 
+```bash
 dotnet restore
+```
 
 ### 3. Ejecutar la API
 
+```bash
 dotnet run
+```
 
 ## 📢 Ejemplos de Endpoints
 
 ### GET /api/task
 
-Descripción: Lista todas las tareas
-Response:
+**Descripción:** Lista todas las tareas
+**Response:**
+
+```json
 {
-"data": [{ ...Lista }],
-"mensaje": "Tareas listadas correctamente",
-"statusCode": 200
+    "data": [{ ...Lista }],
+    "mensaje": "Tareas listadas correctamente",
+    "statusCode": 200
 }
+```
 
 ### GET /api/task/{id}
 
-Descripción: Lista una tarea por ID
-Response:
+**Descripción:** Lista una tarea por ID
+**Response:**
+
+```json
 {
-"data": { ...Tarea },
-"mensaje": "Tarea listada correctamente",
-"statusCode": 200
+    "data": { ...Tarea },
+    "mensaje": "Tarea listada correctamente",
+    "statusCode": 200
 }
+```
 
 ### POST /api/task
 
-Descripción: Crear tarea
-Request:
-{
-"titulo": string,
-"descripcion": string,
-"estado": string
-}
+**Descripción:** Crear tarea
+**Request:**
 
-Response:
+```json
 {
-"data": { ...TareaCreada },
-"mensaje": "Tarea creada exitosamente",
-"statusCode": 200
+    "titulo": string,
+    "descripcion": string,
+    "estado": string
 }
+```
+
+**Response:**
+
+```json
+{
+    "data": { ...TareaCreada },
+    "mensaje": "Tarea creada exitosamente",
+    "statusCode": 200
+}
+```
 
 ### PUT /api/task/{id}
 
-Descripción: Actualizar una tarea por ID.
-Request:
-{
-"titulo": string,
-"descripcion": string,
-"estado": string
-}
+**Descripción:** Actualizar una tarea por ID.
+**Request:**
 
-Response:
+```json
 {
-"data": { ...TareaActualizada },
-"mensaje": "Tarea actualizada exitosamente",
-"statusCode": 200
+    "titulo": string,
+    "descripcion": string,
+    "estado": string
 }
+```
+
+**Response:**
+
+```json
+{
+    "data": { ...TareaActualizada },
+    "mensaje": "Tarea actualizada exitosamente",
+    "statusCode": 200
+}
+```
 
 ### DELETE /api/task/{id}
 
-Descripción: Eliminar una tarea por ID.
-Response:
+**Descripción:** Eliminar una tarea por ID.
+**Response:**
+
+```json
 {
-"data": null,
-"mensaje": "Tareas obtenidas correctamente",
-"statusCode": 200
+  "data": null,
+  "mensaje": "Tareas obtenidas correctamente",
+  "statusCode": 200
 }
+```
